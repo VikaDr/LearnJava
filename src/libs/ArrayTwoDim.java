@@ -21,5 +21,9 @@ public class ArrayTwoDim {
                 System.out.println();
             }
         }
+        else {
+            System.out.println("Error");
+        }
         return twoArray;
-    }}
+    }
+}
