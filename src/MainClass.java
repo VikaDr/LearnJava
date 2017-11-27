@@ -107,7 +107,7 @@ public class MainClass {
 
 
         ArrayTwoDim.twoArray(4,4);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
-        ArrayTwoDim.arrayChange(1, ArrayTwoDim.twoArray(0,0));
+        ArrayTwoDim.arrayChange(1, ArrayTwoDim.twoArray(4,4));
 
 //        WorkWithList workWithList = new WorkWithList();
 
