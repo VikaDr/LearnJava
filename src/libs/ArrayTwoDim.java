@@ -16,7 +16,7 @@ public class ArrayTwoDim {
         for (int k = 0; k < twoArray.length; k++) {
             for (int n = 0; n < twoArray.length; n++) {
                 if (k==n){
-                    System.out.print(valueForChange);
+                    System.out.print("test");
                 }
                 else {
                 System.out.print("test");
@@ -27,4 +27,5 @@ public class ArrayTwoDim {
         return twoArray;
     }
         return twoArray;
-    }}
+    }
+}
