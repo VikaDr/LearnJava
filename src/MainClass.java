@@ -1,6 +1,7 @@
 import libs.ArrayTwoDim;
 import libs.LibClass;
 import libs.WorkWithArray;
+//import libs.WorkWithList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -105,8 +106,13 @@ public class MainClass {
         System.out.println(ourMap.get("login"));
 
 
-        ArrayTwoDim.twoArray(5,5);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
+        ArrayTwoDim.twoArray(4,4);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
         ArrayTwoDim.arrayChange(1, ArrayTwoDim.twoArray(0,0));
+
+//        WorkWithList workWithList = new WorkWithList();
+
+
+
     }
 }
 
