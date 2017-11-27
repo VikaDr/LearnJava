@@ -106,8 +106,8 @@ public class MainClass {
         System.out.println(ourMap.get("login"));
 
 
-        ArrayTwoDim.twoArray(2,2);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
-        ArrayTwoDim.arrayChange(1, ArrayTwoDim.twoArray(2,2));
+        ArrayTwoDim.twoArray(3,3);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
+        ArrayTwoDim.arrayChange(1, ArrayTwoDim.twoArray(3,3));
 
 //        WorkWithList workWithList = new WorkWithList();
 

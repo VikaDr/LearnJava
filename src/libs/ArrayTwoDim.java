@@ -16,7 +16,7 @@ public class ArrayTwoDim {
         if (twoArray.length == twoArray[1].length) {
             for (int k = 0; k < twoArray.length; k++) {
                 for (int n = 0; n < twoArray.length; n++) {
-                    System.out.print(valueForChange + " ");
+                    System.out.print(twoArray[k][n]=valueForChange);
                 }
                 System.out.println();
             }
