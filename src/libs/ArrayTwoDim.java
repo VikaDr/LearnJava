@@ -13,12 +13,16 @@ public class ArrayTwoDim {
     }
 
     public static int[][] arrayChange(int valueForChange, int[][] twoArray) {
-        for (int i = 0; i < twoArray.length; i++) {
-
-
-
+        for (int k = 0; k < twoArray.length; k++) {
+            for (int n = 0; n < twoArray.length; n++) {
+                if (twoArray[k]==twoArray[n]){
+                }
+                else {
+                System.out.println(valueForChange+"test");
+            }
         }
-        System.out.println();
+        System.out.println("test13");
         return twoArray;
     }
-  }
+        return twoArray;
+    }}
