@@ -5,10 +5,11 @@ public class ArrayTwoDim {
         int[][] arrayMas = new int[i][j];
         for (i = 0; i < arrayMas.length; i++) {
             for (j = 0; j < arrayMas.length; j++) {
-                System.out.print((arrayMas[i][j]) + " ");
+                arrayMas[i][j]=5;
             }
-            System.out.println(" ");
+//            System.out.println(" ");
         }
+        printMatrix(arrayMas);
         return arrayMas;
     }
 
@@ -21,16 +22,20 @@ public class ArrayTwoDim {
                     n++;
                 }
             }
-            for (int i = 0; i < twoArray.length; i++) {
-                for (n = 0; n < twoArray.length; n++) {
-                    System.out.print(twoArray[i][n] + " ");
-                }
-                System.out.println();
-            }
+         printMatrix(twoArray);
         }
         else {
             System.out.println("Error");
         }
         return twoArray;
+    }
+    public static void printMatrix (int[][] matrixForPrint){
+
+        for (int i = 0; i < matrixForPrint.length; i++) {
+            for (int n = 0; n < matrixForPrint.length; n++) {
+                System.out.print(matrixForPrint[i][n] + " ");
+            }
+            System.out.println();
+        }
     }
 }
