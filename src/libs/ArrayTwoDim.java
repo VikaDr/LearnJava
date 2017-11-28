@@ -1,33 +1,32 @@
 package libs;
 
 public class ArrayTwoDim {
-    public static int[][] twoArray(int i, int j) {
+    public static int[][] createMatrix (int i, int j) {
         int[][] arrayMas = new int[i][j];
         for (i = 0; i < arrayMas.length; i++) {
             for (j = 0; j < arrayMas.length; j++) {
                 arrayMas[i][j]=5;
             }
-//            System.out.println(" ");
         }
         printMatrix(arrayMas);
         return arrayMas;
     }
 
-    public static int[][] arrayChange(int valueForChange, int[][] twoArray) {
-        if (twoArray.length == twoArray[1].length) {
+    public static int[][] arrayChange(int valueForChange, int[][] createMatrix) {
+        if (createMatrix.length == createMatrix[1].length) {
             int n = 0;
-            for (int k = 0; k < twoArray.length; k++) {
+            for (int k = 0; k < createMatrix.length; k++) {
                 while (k == n) {
-                    twoArray[k][n] = valueForChange;
+                    createMatrix[k][n] = valueForChange;
                     n++;
                 }
             }
-         printMatrix(twoArray);
+         printMatrix(createMatrix);
         }
         else {
             System.out.println("Error");
         }
-        return twoArray;
+        return createMatrix;
     }
     public static void printMatrix (int[][] matrixForPrint){
 

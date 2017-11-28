@@ -107,7 +107,7 @@ public class MainClass {
 
 
 //        ArrayTwoDim.twoArray(3,3);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
-        int[][] tempArray = ArrayTwoDim.twoArray(3,3);
+        int[][] tempArray = ArrayTwoDim.createMatrix(3,3);
         ArrayTwoDim.arrayChange(1, tempArray);
 
 
