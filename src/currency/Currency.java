@@ -57,7 +57,7 @@ abstract public class Currency {
 
     public double exchangeCurrencyToGrn (int currency){
         double tempResult2 = currency * kursSell;
-        System.out.println("Kurs " + kursSell +  " For " + currency + " you get " + tempResult2);
+        System.out.println("Kurs " + kursSell +  " For " + currency + " you get " + tempResult2 + " grn");
         return tempResult2;
 
     }

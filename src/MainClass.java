@@ -154,8 +154,5 @@ public class MainClass {
 
     }
 
-    public static void test(Currency currency){
-        currency.exchangeCurrencyToGrn(0);
-    }
 }
 
