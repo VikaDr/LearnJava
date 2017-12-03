@@ -141,6 +141,8 @@ public class MainClass {
         Bitcoin bitcoin = new Bitcoin(300260.7, 1.1, 1);
         final String nameBitcoin = "Bitcoin ";
         System.out.println(nameBitcoin + bitcoin.getKursBuy());
+        bitcoin.setKursNBU(100222.4);
+        System.out.println(nameBitcoin + bitcoin.getKursBuy());
 
         dollar.setKursNBU(18);
         euro.setKursNBU(20);
