@@ -1,7 +1,12 @@
+import currency.Bitcoin;
+import currency.Currency;
+import currency.Dollar;
+import currency.Euro;
 import libs.ArrayTwoDim;
 import libs.LibClass;
 import libs.WorkWithArray;
-//import libs.WorkWithList;
+import libs.WorkWithList;
+
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -106,17 +111,49 @@ public class MainClass {
         System.out.println(ourMap.get("login"));
 
 
-//        ArrayTwoDim.twoArray(3,3);//создаем два метода, в первом методе создаем матрицу, во втором подаем ее на вход
-        int[][] tempArray = ArrayTwoDim.createMatrix(3,3);
-        ArrayTwoDim.arrayChange(1, tempArray);
+        int[][] tempArray = ArrayTwoDim.createMatrix(5,5);
+        ArrayTwoDim.arrayChange(0, tempArray);
 
 
-//        WorkWithList workWithList = new WorkWithList();
+        //WORK_WITH_LIST
+
+        WorkWithList workWithList = new WorkWithList();
+        List<List<String>> ourListList1 = new ArrayList <>();
+        workWithList.addNewList(ourListList1);
+        workWithList.addValueToListList(0, "test", ourListList1);
+        workWithList.addNewList(ourListList1);
+        workWithList.addValueToListList(1, "test1", ourListList1);
+        workWithList.addValueToListList(0,"test0", ourListList1);
+
+        //CURRENCY
+
+        Dollar dollar = new Dollar(26.2, 1.2, 0.8);
+        System.out.println(dollar.getKursNBU());
+        dollar.setKursNBU(27.15);
+        System.out.println(dollar.getKursNBU());
+
+        Euro euro = new Euro(30.5, 1.3, 0.7);
+        final String nameEuro = "Euro ";
+        System.out.println(nameEuro + euro.getKursNBU());
+        euro.setKursNBU(32);
+        System.out.println(nameEuro + euro.getKursNBU());
+
+        Currency currency = new Bitcoin(300260.7, 1.1, 1);
+        final String nameBitcoin = "Bitcoin ";
+        System.out.println(nameBitcoin + currency.getKursBuy());
+
+        dollar.setKursNBU(18);
+        euro.setKursNBU(20);
+        final String nameDollar = "Dollar ";
+        System.out.println(nameDollar + dollar.getKursNBU() + "  " + nameEuro + euro.getKursNBU());
+
+        dollar.exchangeGrnToCurrency(1000);
+        dollar.exchangeCurrencyToGrn(100);
+        currency.exchangeGrnToCurrency(1000000);
+        currency.exchangeCurrencyToGrn(10);
 
 
 
     }
 }
 
-//1. метод который создает пустой список, 2. метод добавляет пустую строку, 3. метод который заполняет данными. Всюду стринг.
-//

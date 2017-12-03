@@ -8,12 +8,12 @@ public class ArrayTwoDim {
                 arrayMas[i][j]=5;
             }
         }
-        printMatrix(arrayMas);
+       printMatrix(arrayMas);
         return arrayMas;
     }
 
     public static int[][] arrayChange(int valueForChange, int[][] createMatrix) {
-        if (createMatrix.length == createMatrix[1].length) {
+        if (createMatrix.length == createMatrix[0].length) {
             int n = 0;
             for (int k = 0; k < createMatrix.length; k++) {
                 while (k == n) {
@@ -28,13 +28,15 @@ public class ArrayTwoDim {
         }
         return createMatrix;
     }
-    public static void printMatrix (int[][] matrixForPrint){
+
+    private static void printMatrix (int[][] matrixForPrint){
 
         for (int i = 0; i < matrixForPrint.length; i++) {
-            for (int n = 0; n < matrixForPrint.length; n++) {
+            for (int n = 0; n < matrixForPrint[0].length; n++) {
                 System.out.print(matrixForPrint[i][n] + " ");
             }
             System.out.println();
         }
+        System.out.println(" ");
     }
 }
