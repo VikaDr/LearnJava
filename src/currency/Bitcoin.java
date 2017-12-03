@@ -5,6 +5,10 @@ public class Bitcoin extends Currency implements IsFreelyConver{
         super(kursNBU, rateBuy, rateSell);
 
     }
+    public double exchangeCurrencyToGrn(int bitcoin){
+        System.out.println("Operacia zapreschena NBU");
+        return bitcoin;
+    }
 
     @Override
     public boolean getFreelyConv() {
