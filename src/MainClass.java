@@ -138,9 +138,9 @@ public class MainClass {
         euro.setKursNBU(32);
         System.out.println(nameEuro + euro.getKursNBU());
 
-        Currency currency = new Bitcoin(300260.7, 1.1, 1);
+        Bitcoin bitcoin = new Bitcoin(300260.7, 1.1, 1);
         final String nameBitcoin = "Bitcoin ";
-        System.out.println(nameBitcoin + currency.getKursBuy());
+        System.out.println(nameBitcoin + bitcoin.getKursBuy());
 
         dollar.setKursNBU(18);
         euro.setKursNBU(20);
@@ -149,11 +149,13 @@ public class MainClass {
 
         dollar.exchangeGrnToCurrency(1000);
         dollar.exchangeCurrencyToGrn(100);
-        currency.exchangeGrnToCurrency(1000000);
-        currency.exchangeCurrencyToGrn(10);
+        bitcoin.exchangeGrnToCurrency(1000000);
+        bitcoin.exchangeCurrencyToGrn(10);
 
+    }
 
-
+    public static void test(Currency currency){
+        currency.exchangeCurrencyToGrn(0);
     }
 }
 
