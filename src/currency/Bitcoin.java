@@ -5,8 +5,8 @@ public class Bitcoin extends Currency{
         super(kursNBU, rateBuy, rateSell);
 
     }
-    public double exchangeCurrencyToGrn(int bitcoin){
+    public double exchangeCurrencyToGrn(int numberOfCurrency){
         System.out.println("Operacia zapreschena NBU");
-        return bitcoin;
+        return numberOfCurrency;
     }
 }
