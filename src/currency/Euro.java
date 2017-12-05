@@ -1,10 +1,8 @@
 package currency;
 
 public class Euro extends Currency implements IsFreelyConver{
-
-
-    public Euro(double kursNBU, double rateBuy, double rateSell) {
-        super(kursNBU, rateBuy, rateSell);
+    public Euro(String nameOfCurrency, double kursNBU, double rateBuy, double rateSell) {
+        super(nameOfCurrency, kursNBU, rateBuy, rateSell);
     }
 
     @Override

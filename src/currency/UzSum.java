@@ -1,10 +1,8 @@
 package currency;
 
 public class UzSum extends Currency implements IsFreelyConver{
-
-
-    public UzSum(double kursNBU, double rateBuy, double rateSell) {
-        super(kursNBU, rateBuy, rateSell);
+    public UzSum(String nameOfCurrency, double kursNBU, double rateBuy, double rateSell) {
+        super(nameOfCurrency, kursNBU, rateBuy, rateSell);
     }
 
     @Override

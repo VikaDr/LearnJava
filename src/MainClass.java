@@ -127,18 +127,18 @@ public class MainClass {
 
         //CURRENCY
 
-        Dollar dollar = new Dollar(26.2, 1.2, 0.8);
+        Dollar dollar = new Dollar(" Dollar ", 26.2, 1.2, 0.8);
         System.out.println(dollar.getKursNBU());
         dollar.setKursNBU(27.15);
         System.out.println(dollar.getKursNBU());
 
-        Euro euro = new Euro(30.5, 1.3, 0.7);
+        Euro euro = new Euro(" Euro ", 30.5, 1.3, 0.7);
         final String nameEuro = "Euro ";
         System.out.println(nameEuro + euro.getKursNBU());
         euro.setKursNBU(32);
         System.out.println(nameEuro + euro.getKursNBU());
 
-        Bitcoin bitcoin = new Bitcoin(300260.7, 1.1, 1);
+        Bitcoin bitcoin = new Bitcoin(" Bitcoin ", 300260.7, 1.1, 1);
         final String nameBitcoin = "Bitcoin ";
         System.out.println(nameBitcoin + bitcoin.getKursBuy());
         bitcoin.setKursNBU(100222.4);

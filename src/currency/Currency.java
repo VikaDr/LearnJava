@@ -4,11 +4,13 @@ abstract public class Currency {
     double kursNBU;
     double rateSell, rateBuy;
     double kursSell, kursBuy;
+    String nameOfCurrency;
 
-    public Currency(double kursNBU, double rateBuy, double rateSell){
+    public Currency(String nameOfCurrency, double kursNBU, double rateBuy, double rateSell){
         this.kursNBU = kursNBU; //возьми переменную этого класса и запиши в нее то что придет извне (с конструктора)
         this.rateBuy = rateBuy;
         this.rateSell = rateSell;
+        this.nameOfCurrency = nameOfCurrency;
         kursBuy = kursNBU * rateBuy;
         kursSell = kursNBU * rateSell;
     }
@@ -55,9 +57,9 @@ abstract public class Currency {
         return tempResult;
     }
 
-    public double exchangeCurrencyToGrn (int currency){
-        double tempResult2 = currency * kursSell;
-        System.out.println("Kurs " + kursSell +  " For " + currency + " you get " + tempResult2 + " grn");
+    public double exchangeCurrencyToGrn (int numberOfCurrency){
+        double tempResult2 = numberOfCurrency * kursSell;
+        System.out.println("Kurs " + kursSell +  " For " + numberOfCurrency + " you get " + tempResult2 + " grn");
         return tempResult2;
 
     }
