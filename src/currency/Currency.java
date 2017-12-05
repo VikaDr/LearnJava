@@ -53,13 +53,13 @@ abstract public class Currency {
 
     public double exchangeGrnToCurrency(int grn){
         double tempResult = grn / kursBuy;
-        System.out.println("Kurs " + kursBuy + " For " + grn + " you get " + tempResult);
+        System.out.println("Kurs " + kursBuy + " For " + grn + " you get " + tempResult +  nameOfCurrency);
         return tempResult;
     }
 
     public double exchangeCurrencyToGrn (int numberOfCurrency){
         double tempResult2 = numberOfCurrency * kursSell;
-        System.out.println("Kurs " + kursSell +  " For " + numberOfCurrency + " you get " + tempResult2 + " grn");
+        System.out.println("Kurs " + kursSell +  " For " + numberOfCurrency + nameOfCurrency + " you get " + tempResult2 + " Grn");
         return tempResult2;
 
     }
