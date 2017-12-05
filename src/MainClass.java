@@ -149,7 +149,7 @@ public class MainClass {
         final String nameDollar = "Dollar ";
         System.out.println(nameDollar + dollar.getKursNBU() + "  " + nameEuro + euro.getKursNBU());
 
-        dollar.exchangeGrnToCurrency(1000);
+        dollar.exchangeGrnToCurrency(10000);
         dollar.exchangeCurrencyToGrn(100);
         bitcoin.exchangeGrnToCurrency(1000000);
         bitcoin.exchangeCurrencyToGrn(10);
